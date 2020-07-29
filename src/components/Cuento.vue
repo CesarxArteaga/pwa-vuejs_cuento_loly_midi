@@ -8,7 +8,7 @@
           ref="book">
       <template slot-scope="prop">
         <img v-if="prop.page.cover" :src="prop.page.urlcover">
-        <Contenido :texto="prop.page.title"></Contenido>
+        <Contenido :texto="prop.page.title" :pictogramas="prop.page.pictogramas"></Contenido>
       </template>
     </book>
     </div>
@@ -27,7 +27,7 @@ export default {
             page: 1,
             pages: [
                 { cover:true, have_title: false,button: false, urlcover: require('../assets/logo.png'), title: ""},
-                { cover:false,have_title: true,button: true,  title: "Argumentos dinámicos de la directiva también funcionan en v-slot, permitiendo la definición de nombres dinámicos en los slots" },
+                { cover:false,have_title: true,button: true,  title: "Argumentos dinámicos de la directiva también funcionan en v-slot, permitiendo la definición de nombres dinámicos en los slots", pictogramas: [ {url:require('../assets/logo.png'), name:"sol"},{url:require('../assets/logo.png'), name:"sol"},{url:require('../assets/logo.png'), name:"sol"} ] },
                 { cover:true,have_title: true,button: true, urlcover: require('../assets/logo.png'), title: "Para usar un componente con props tienes que importarlo como ya vimos, y en la etiqueta tienes que pasar los props como un atributo más del html" },
                 { cover:false,have_title: true,button: true, urlcover: require('../assets/logo.png'), title: "Argumentos dinámicos de la directiva también funcionan en v-slot, permitiendo la definición de nombres dinámicos en los slots" },
                 { cover:false,have_title: true,button: true, urlcover: require('../assets/logo.png'), title: "Para usar un componente con props tienes que importarlo como ya vimos, y en la etiqueta tienes que pasar los props como un atributo más del html" },

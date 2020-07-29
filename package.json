@@ -11,6 +11,7 @@
     "gsap": "^3.4.2",
     "jquery": "^3.5.1",
     "register-service-worker": "^1.7.1",
+    "v-tooltip": "^2.0.3",
     "vue": "^2.6.11",
     "vue-book-component": "^1.1.3",
     "vue-router": "^3.2.0"
